@@ -8,6 +8,7 @@ public class Test : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDrag
 {
     [SerializeField] private RectTransform rect_Background;
     [SerializeField] private RectTransform rect_Joystick;
+   
 
     private float radius;
     private bool istouch = false;
@@ -25,11 +26,15 @@ public class Test : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDrag
     void Update()
     {
         if (istouch)
+        { 
             go_Player.transform.position += movePosition;
+        }
+       
     }
 
     public void OnDrag(PointerEventData eventData)
     {
+
         Vector2 value = eventData.position - (Vector2)rect_Background.position;
 
         value = Vector2.ClampMagnitude(value, radius);
