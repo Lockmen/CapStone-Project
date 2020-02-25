@@ -18,11 +18,13 @@ public class PlayerController : MonoBehaviour
         velocity = _velocity;
     }
 
-    public void LookAt(Vector3 lookPoint)
+    public void LookAt(Vector3 lookPoint) //플레이어가 마우스커서를 향해 바라보는것, 총 발사궤도 수정 
     {
         Vector3 heightCorrectedPoint = new Vector3(lookPoint.x, transform.position.y, lookPoint.z);
         transform.LookAt(heightCorrectedPoint);
     }
+    
+    
 
     public void FixedUpdate()
     {
