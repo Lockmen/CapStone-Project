@@ -882,7 +882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff556dc4e2f8d4429c0c89d42b33d90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 10
+  startingHealth: 5
   moveSpeed: 5
 --- !u!1 &1352624747
 GameObject:
