@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Material/Scenes/SampleScene.unity
+- path: Assets/Scene/CharterSelection.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
