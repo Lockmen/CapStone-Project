@@ -14,9 +14,9 @@ TagManager:
   - 
   - 
   - Enemy
-  - 
-  - 
-  - 
+  - Floor
+  - Obstacle
+  - Shell
   - 
   - 
   - 
