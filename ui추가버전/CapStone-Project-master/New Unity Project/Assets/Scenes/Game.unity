@@ -18507,44 +18507,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a0ba7b7d66d11e46ada19edca784496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  devMode: 0
+  devMode: 1
   waves:
   - infinite: 0
-    enemyCount: 40
+    enemyCount: 1
     timeBetweenSpawns: 0.7
     moveSpeed: 2.2
     hitsToKillPlayer: 5
-    enemyHealth: 1
+    enemyHealth: 0.1
     skinColour: {r: 0.37434268, g: 1, b: 0, a: 0}
   - infinite: 0
-    enemyCount: 60
+    enemyCount: 1
     timeBetweenSpawns: 0.6
     moveSpeed: 2.5
     hitsToKillPlayer: 4
     enemyHealth: 1
     skinColour: {r: 0, g: 0.04313898, b: 1, a: 0}
   - infinite: 0
-    enemyCount: 70
+    enemyCount: 1
     timeBetweenSpawns: 0.5
     moveSpeed: 2.7
     hitsToKillPlayer: 3
-    enemyHealth: 2
+    enemyHealth: 0.1
     skinColour: {r: 1, g: 0, b: 0.053242683, a: 0}
   - infinite: 0
-    enemyCount: 100
+    enemyCount: 1
     timeBetweenSpawns: 0.45
     moveSpeed: 2.8
-    hitsToKillPlayer: 2
-    enemyHealth: 1
+    hitsToKillPlayer: 4
+    enemyHealth: 0.1
     skinColour: {r: 1, g: 0, b: 0.9424448, a: 0}
   - infinite: 1
     enemyCount: -1
     timeBetweenSpawns: 0.4
     moveSpeed: 4
     hitsToKillPlayer: 1
-    enemyHealth: 1
+    enemyHealth: 0
     skinColour: {r: 0, g: 0, b: 0, a: 0}
   enemy: {fileID: 6790552149581729468, guid: 4b12955b7bb620841bc907ba5eb772e7, type: 3}
+  enemy2: {fileID: 3161459979512111342, guid: b89e0c3c675d2f6468bb44ecbf17fb04, type: 3}
 --- !u!4 &1589539484
 Transform:
   m_ObjectHideFlags: 0

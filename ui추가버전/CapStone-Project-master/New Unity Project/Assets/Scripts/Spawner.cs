@@ -8,6 +8,9 @@ public class Spawner : MonoBehaviour
 
     public Wave[] waves;
     public Enemy enemy;
+    public Enemy enemy2;
+  //  public Boss boss;
+    
 
     LivingEntity playerEntity;
     Transform playerT;
@@ -102,10 +105,19 @@ public class Spawner : MonoBehaviour
             spawnTimer += Time.deltaTime;
             yield return null;
         }
-
-        Enemy spawnedEnemy = Instantiate(enemy, spawnTile.position + Vector3.up, Quaternion.identity) as Enemy;
-        spawnedEnemy.OnDeath += OnEnemyDeath;
-        spawnedEnemy.SetCharacteristics(currentWave.moveSpeed, currentWave.hitsToKillPlayer, currentWave.enemyHealth, currentWave.skinColour);
+        if (currentWaveNumber == 4)
+        {
+            Enemy spawnedEnemy = Instantiate(enemy2, spawnTile.position + Vector3.up, Quaternion.identity) as Enemy;
+            spawnedEnemy.OnDeath += OnEnemyDeath;
+            spawnedEnemy.SetCharacteristics(currentWave.moveSpeed, currentWave.hitsToKillPlayer, currentWave.enemyHealth, currentWave.skinColour);
+        }
+        else
+        {
+            Enemy spawnedEnemy = Instantiate(enemy, spawnTile.position + Vector3.up, Quaternion.identity) as Enemy;
+            spawnedEnemy.OnDeath += OnEnemyDeath;
+            spawnedEnemy.SetCharacteristics(currentWave.moveSpeed, currentWave.hitsToKillPlayer, currentWave.enemyHealth, currentWave.skinColour);
+        }
+        
     }
 
     void OnPlayerDeath()
